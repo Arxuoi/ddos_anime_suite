@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>El Cienco - 7 Sins DDoS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ANIME BACKGROUND -->
+    <div class="anime-bg">
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="particles"></div>
+        <div class="neon-grid"></div>
+    </div>
+    
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- HEADER -->
+        <header class="cyber-header">
+            <div class="logo-container">
+                <span class="logo-symbol">七</span>
+                <h1 class="logo-text">
+                    <span class="glitch" data-text="EL CIENCO">EL CIENCO</span>
+                </h1>
+                <span class="logo-sub">// 7 SINS DDoS //</span>
+            </div>
+            <div class="status-indicator">
+                <span class="pulse"></span>
+                <span id="connectionStatus">ONLINE</span>
+            </div>
+        </header>
+        
+        <!-- ANIME MASCOT -->
+        <div class="mascot-section">
+            <div class="mascot-container">
+                <pre class="anime-mascot">
+   ⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀
+   ⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀
+   ⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀
+   ⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀
+   ⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀
+   ⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀
+   ⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀
+   ⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⠀⠀
+   ⠀⠀⠀⠈⠙⠛⠛⠛⠛⠛⠛⠛⠛⠋⠁⠀⠀⠀⠀
+                </pre>
+                <div class="speech-bubble">
+                    <span id="mascotMessage">Pilih senjata digitalmu, El Manco-sama! >_<</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ATTACK PANEL -->
+        <div class="attack-panel">
+            <div class="panel-header">
+                <h2>⚡ TARGET ACQUISITION ⚡</h2>
+            </div>
+            
+            <div class="target-input-group">
+                <input type="text" id="targetInput" placeholder="Masukkan target (URL / IP Address)" class="cyber-input">
+                <input type="number" id="portInput" placeholder="Port (default: 80)" value="80" class="cyber-input port-input">
+                <input type="number" id="durationInput" placeholder="Durasi (detik)" value="60" class="cyber-input duration-input">
+            </div>
+            
+            <!-- 7 ATTACK BUTTONS -->
+            <div class="attack-grid">
+                <button class="attack-card http" data-type="http">
+                    <span class="card-icon">🌐</span>
+                    <span class="card-title">HTTP FLOOD</span>
+                    <span class="card-desc">Layer 7 Web Assault</span>
+                    <div class="card-glow"></div>
+                </button>
+                
+                <button class="attack-card udp" data-type="udp">
+                    <span class="card-icon">📦</span>
+                    <span class="card-title">UDP FLOOD</span>
+                    <span class="card-desc">Layer 4 Packet Storm</span>
+                    <div class="card-glow"></div>
+                </button>
+                
+                <button class="attack-card syn" data-type="syn">
+                    <span class="card-icon">🤝</span>
+                    <span class="card-title">SYN FLOOD</span>
+                    <span class="card-desc">TCP Handshake Chaos</span>
+                    <div class="card-glow"></div>
+                </button>
+                
+                <button class="attack-card slowloris" data-type="slowloris">
+                    <span class="card-icon">🐌</span>
+                    <span class="card-title">SLOWLORIS</span>
+                    <span class="card-desc">Connection Exhaustion</span>
+                    <div class="card-glow"></div>
+                </button>
+                
+                <button class="attack-card icmp" data-type="icmp">
+                    <span class="card-icon">📡</span>
+                    <span class="card-title">ICMP FLOOD</span>
+                    <span class="card-desc">Layer 3 Ping Death</span>
+                    <div class="card-glow"></div>
+                </button>
+                
+                <button class="attack-card dns" data-type="dns">
+                    <span class="card-icon">🔍</span>
+                    <span class="card-title">DNS AMP</span>
+                    <span class="card-desc">Amplification Attack</span>
+                    <div class="card-glow"></div>
+                </button>
+                
+                <button class="attack-card memcached" data-type="memcached">
+                    <span class="card-icon">💾</span>
+                    <span class="card-title">MEMCACHED</span>
+                    <span class="card-desc">Cache Amplification</span>
+                    <div class="card-glow"></div>
+                </button>
+            </div>
+            
+            <!-- CONTROL BUTTONS -->
+            <div class="control-panel">
+                <button id="stopAttackBtn" class="control-btn stop-btn">
+                    <span>🛑</span> STOP ATTACK
+                </button>
+                <button id="clearBtn" class="control-btn clear-btn">
+                    <span>🔄</span> RESET
+                </button>
+            </div>
+        </div>
+        
+        <!-- STATS PANEL -->
+        <div class="stats-panel">
+            <div class="stat-item">
+                <span class="stat-label">Packets Sent</span>
+                <span class="stat-value" id="packetsSent">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Bytes Sent</span>
+                <span class="stat-value" id="bytesSent">0 MB</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Current Target</span>
+                <span class="stat-value" id="currentTarget">-</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Attack Status</span>
+                <span class="stat-value" id="attackStatus">IDLE</span>
+            </div>
+        </div>
+        
+        <!-- CONSOLE OUTPUT -->
+        <div class="console">
+            <div class="console-header">
+                <span>📟 EL CIENCO CONSOLE v2.0</span>
+                <span class="console-clear" id="clearConsole">[CLEAR]</span>
+            </div>
+            <div class="console-output" id="consoleOutput">
+                <div class="console-line">> Sistem El Cienco online...</div>
+                <div class="console-line">> Menunggu perintah El Manco-sama</div>
+                <div class="console-line">> 7 Fitur siap digunakan</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
